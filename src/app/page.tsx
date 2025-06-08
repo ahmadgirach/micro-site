@@ -1,16 +1,17 @@
-import { Hero } from "@/components/sections/hero";
-import { Projects } from "@/components/sections/projects";
-import { Testimonials } from "@/components/sections/testimonials";
-import { Blog } from "@/components/sections/blog";
+import { HeroLanding } from "@/components/sections/hero-landing";
+import { Features } from "@/components/sections/features";
+import { WhyChooseUs } from "@/components/sections/why-choose-us";
+import { Pricing } from "@/components/sections/pricing";
+import { FAQ } from "@/components/sections/faq";
 
 export default function Home() {
   return (
     <div>
-      <Hero />
-      {/* <Skills /> */}
-      <Projects />
-      <Blog />
-      <Testimonials />
+      <HeroLanding />
+      <Features />
+      <WhyChooseUs />
+      <Pricing />
+      <FAQ />
     </div>
   );
 }

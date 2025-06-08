@@ -56,12 +56,10 @@ pnpm/bun dev
 - [] Testimonials
 - [] Blog
 - [] Bookmarks (save & tag links)
+- [] One click PDF Resume export
+- [] Analytics
 - [] Video Introduction
 - [] Multi Theme
-- [] One click PDF Resume export
-- [] Subdomain support
-- [] Analytics
-- [] Password Protected sections
 
 ## 📄 License
 
