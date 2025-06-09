@@ -1,4 +1,4 @@
-# 🌐 Microsite.live — An open source and a better alternative to about.me
+# 🌐 Microsite — An open source and a better alternative to about.me
 
 An open-source **microsite generator** for developers, creators, and professionals. Share your bio, projects, blog posts, and bookmarks — all in one beautiful page.
 
@@ -25,11 +25,11 @@ An open-source **microsite generator** for developers, creators, and professiona
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/ahmadgirach/microsite.live.git
-cd microsite.live
+git clone https://github.com/ahmadgirach/micro-site.git
+cd micro-site
 
 # 2. Install dependencies
-npm/pnpm/bun install # or npm install / yarn install
+bun i
 
 # 3. Copy env file and add your credentials
 cp .env.example .env
@@ -46,20 +46,19 @@ GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
 ```
 # 4. Run dev server
-pnpm/bun dev
+bun dev
 
 ## 📌 Roadmap
 
-- [] Google Auth
-- [] Editor (avatar, bio, links)
-- [] Projects
-- [] Testimonials
-- [] Blog
-- [] Bookmarks (save & tag links)
-- [] One click PDF Resume export
-- [] Analytics
-- [] Video Introduction
-- [] Multi Theme
+- [ ] Google Auth
+- [ ] Projects
+- [ ] Testimonials
+- [ ] Blog
+- [ ] Bookmarks (save & tag links)
+- [ ] One click PDF Resume export
+- [ ] Analytics
+- [ ] Video Introduction
+- [ ] Multi Theme
 
 ## 📄 License
 

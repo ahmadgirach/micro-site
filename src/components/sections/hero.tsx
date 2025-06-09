@@ -25,7 +25,7 @@ export function Hero() {
           <div className="relative">
             <Avatar className="size-50 rounded-md">
               <AvatarImage
-                // src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/assets/avatar.jpeg"
                 alt="Ahmad Girach"
                 className="object-cover rounded-md"
               />
@@ -56,15 +56,6 @@ export function Hero() {
               <span className="text-primary">Ahmad Girach</span>
             </motion.h1>
 
-            {/* <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-xl md:text-2xl text-muted-foreground"
-            >
-              Full Stack Developer
-            </motion.p> */}
-
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -74,21 +65,6 @@ export function Hero() {
               Sr. Software Engineer focusing on building scalable web apps.
             </motion.p>
           </div>
-
-          {/* <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-          >
-            <Button size="lg" className="gap-2">
-              <Download className="size-4" />
-              Download Resume
-            </Button>
-            <Button size="lg" variant="outline">
-              View My Work
-            </Button>
-          </motion.div> */}
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -123,8 +99,9 @@ export function Hero() {
         >
           I'm passionate about creating exceptional digital experiences through
           clean code, innovative solutions, and user-centered design.
-          Specializing in React, Next.js, and modern web technologies to build
-          scalable applications that make a difference.
+          Specializing in Python, Django, TypeScript, React, Next.js, and modern
+          web technologies to build scalable applications that make a
+          difference.
         </motion.p>
       </div>
     </section>
