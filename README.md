@@ -1,8 +1,9 @@
-# 🌐 Microsite — An open source and a better alternative to about.me
+# 🌐 Microsite — An open-source, modern alternative to About.me
 
-An open-source **microsite generator** for developers, creators, and professionals. Share your bio, projects, blog posts, and bookmarks — all in one beautiful page.
+Microsite is a no-code, open-source portfolio builder for developers, creators, and professionals. Easily showcase your bio, projects, blog posts, and bookmarks — all in one elegant page.
 
-![Screenshot](./public/screenshot.png)
+
+![Screenshot](./public/assets/microsite-landingpage.webp)
 
 ## 🚀 Features
 
