@@ -6,53 +6,48 @@ export function FooterLanding() {
 
   const navigation = {
     product: [
+      { name: "Home", href: "/" },
       { name: "Features", href: "#features" },
-      { name: "Templates", href: "#templates" },
+      { name: "Why Choose Us?", href: "#why-choose-us" },
       { name: "Pricing", href: "#pricing" },
-      { name: "Examples", href: "#examples" },
-    ],
-    company: [
-      { name: "About", href: "/about" },
-      { name: "Blog", href: "/blog" },
-      { name: "Careers", href: "/careers" },
-      { name: "Contact", href: "/contact" },
-    ],
-    resources: [
-      { name: "Documentation", href: "/docs" },
-      { name: "Help Center", href: "/help" },
-      { name: "Community", href: "/community" },
-      { name: "Status", href: "/status" },
+      { name: "FAQs", href: "#faqs" },
     ],
     legal: [
       { name: "Privacy Policy", href: "/privacy" },
       { name: "Terms of Service", href: "/terms" },
-      { name: "Cookie Policy", href: "/cookies" },
-      { name: "GDPR", href: "/gdpr" },
     ],
   };
 
   const socialLinks = [
-    { name: "GitHub", href: "#", icon: Github },
-    { name: "Twitter", href: "#", icon: Twitter },
-    { name: "LinkedIn", href: "#", icon: Linkedin },
-    { name: "Email", href: "mailto:hello@microsite.com", icon: Mail },
+    {
+      name: "GitHub",
+      href: "https://github.com/ahmadgirach/micro-site",
+      icon: Github,
+    },
+    { name: "Twitter", href: "https://x.com/MrAhmadGirach", icon: Twitter },
+    {
+      name: "LinkedIn",
+      href: "https://linkedin.com/in/ahmadgirach",
+      icon: Linkedin,
+    },
+    { name: "Email", href: "mailto:ahmedkhatri6@gmail.com", icon: Mail },
   ];
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2 space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Microsite
             </h3>
-            <p className="text-gray-400 leading-relaxed max-w-md">
-              Create beautiful microsites that showcase your digital identity.
+            <p className="text-gray-400 leading-relaxed max-w-md text-balance">
+              Create a beautiful microsite that showcase your digital identity.
               Open source, privacy-focused, and designed for designers,
               developers and creators.
             </p>
-            <div className="flex gap-4">
+            <div className="flex items-center gap-3">
               {socialLinks.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -76,42 +71,6 @@ export function FooterLanding() {
             </h4>
             <ul className="space-y-3">
               {navigation.product.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h4 className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
-              Company
-            </h4>
-            <ul className="space-y-3">
-              {navigation.company.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h4 className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
-              Resources
-            </h4>
-            <ul className="space-y-3">
-              {navigation.resources.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
@@ -150,8 +109,16 @@ export function FooterLanding() {
             </p>
             <div className="flex items-center gap-2 text-sm text-gray-400">
               <span>Made with</span>
-              <Heart className="w-4 h-4 text-red-500" />
-              <span>for creators everywhere</span>
+              <Heart className="size-4 font-medium fill-red-700 stroke-0" />
+              <span>by</span>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://ahmadgirach.com"
+                className="text-indigo-400"
+              >
+                Ahmad Girach.
+              </a>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ const plans = [
       "Projects Showcase",
       "Mobile optimized",
     ],
-    cta: "Get Started Free",
+    cta: "Get Started for Free",
     popular: false,
   },
   {
@@ -47,14 +47,14 @@ const plans = [
       "Multiple themes",
       "Remove Microsite branding",
     ],
-    cta: "Upgrade to Pro",
+    cta: "Coming Soon",
     popular: true,
   },
 ];
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-20 bg-white dark:bg-gray-900">
+    <section id="pricing" className="py-28 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2

@@ -21,7 +21,7 @@ export function NavbarLanding() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-secondary px-4">
       <div className="px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           <Link
             href="/"
             className="inline-flex items-center justify-center gap-2 text-xl font-bold"
@@ -36,7 +36,7 @@ export function NavbarLanding() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="flex items-center space-x-2 text-sm font-medium transition-colors hover:text-primary"
+                  className="flex items-center gap-2 font-medium transition-colors hover:text-primary"
                 >
                   <span>{item.name}</span>
                 </Link>

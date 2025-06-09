@@ -76,9 +76,7 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           <div className="min-h-dvh flex flex-col">
-            <NavbarLanding />
             <main className="flex-1">{children}</main>
-            <FooterLanding />
           </div>
         </ThemeProvider>
       </body>

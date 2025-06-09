@@ -14,22 +14,34 @@ import {
   FileText,
   Bookmark,
 } from "lucide-react";
+import { useParams } from "next/navigation";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
+  const params = useParams();
+  const username = params?.username!;
+
   const navigation = [
-    { name: "Home", href: "/", icon: Home },
-    { name: "Projects", href: "/projects", icon: FolderOpen },
-    { name: "Blog", href: "/blog", icon: FileText },
-    { name: "Bookmarks", href: "/bookmarks", icon: Bookmark },
+    { name: "Home", href: `/${username}`, icon: Home },
+    {
+      name: "Projects",
+      href: `/${username}/projects`,
+      icon: FolderOpen,
+    },
+    { name: "Blog", href: `/${username}/blog`, icon: FileText },
+    {
+      name: "Bookmarks",
+      href: `/${username}/bookmarks`,
+      icon: Bookmark,
+    },
   ];
 
   return (
-    <nav className="sticky top-5 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-secondary px-2 md:rounded-full">
+    <nav className="sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-secondary/60 px-2 md:rounded-full">
       <div className="px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           <Link href="/" className="text-xl font-bold">
             Ahmad Girach.
           </Link>
@@ -42,7 +54,7 @@ export function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="flex items-center space-x-2 text-sm font-medium transition-colors hover:text-primary"
+                  className="flex items-center gap-2 font-medium transition-colors hover:text-primary"
                 >
                   <Icon className="size-4" />
                   <span>{item.name}</span>

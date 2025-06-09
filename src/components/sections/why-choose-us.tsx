@@ -10,7 +10,7 @@ const reasons = [
     icon: Github,
     title: "Open Source",
     description:
-      "Completely open source and transparent. Contribute to the project and help shape the future.",
+      "Completely open source and transparent. Contribute to the project and help shape the product.",
     badge: "Community Driven",
     color: "text-gray-700 dark:text-gray-300",
   },
@@ -18,7 +18,7 @@ const reasons = [
     icon: Palette,
     title: "Superior Design",
     description:
-      "Beautiful, modern templates that make you stand out. No more boring, cookie-cutter profiles.",
+      "Beautiful, modern template that make you stand out. No more boring, cookie-cutter profiles.",
     badge: "Design First",
     color: "text-pink-600",
   },
@@ -44,7 +44,7 @@ export function WhyChooseUs() {
   return (
     <section
       id="why-choose-us"
-      className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900"
+      className="py-28 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">

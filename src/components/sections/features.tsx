@@ -15,7 +15,7 @@ const features = [
     icon: Zap,
     title: "Lightning Fast Setup",
     description:
-      "Get your microsite goes live in under 5 minutes. No technical knowledge required.",
+      "Get your microsite live in under 5 minutes. No technical knowledge required.",
     gradient: "from-yellow-500 to-orange-500",
   },
   {
@@ -43,7 +43,7 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-20 bg-white dark:bg-gray-900">
+    <section id="features" className="py-28 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2
