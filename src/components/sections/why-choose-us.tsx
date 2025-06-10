@@ -46,7 +46,7 @@ export function WhyChooseUs() {
       id="why-choose-us"
       className="py-28 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900"
     >
-      <div className="container mx-auto px-4">
+      <div className="max-w-[90%] mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

@@ -21,7 +21,7 @@ export function FooterLanding() {
   const socialLinks = [
     {
       name: "GitHub",
-      href: "https://github.com/ahmadgirach/micro-site",
+      href: "https://github.com/ahmadgirach/microsite",
       icon: Github,
     },
     { name: "Twitter", href: "https://x.com/MrAhmadGirach", icon: Twitter },
