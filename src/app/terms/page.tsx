@@ -30,7 +30,7 @@ export default function TermsPage() {
                 You may use the service to build and host personal microsites
               </li>
               <li>You must not use it for illegal or harmful purposes</li>
-              <li>You're responsible for the content you publish</li>
+              <li>You&apos;re responsible for the content you publish</li>
             </ul>
           </section>
           <Separator />

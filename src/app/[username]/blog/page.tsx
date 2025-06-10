@@ -89,11 +89,13 @@ export default function BlogPage() {
             className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer"
           >
             <div className="aspect-video overflow-hidden rounded-t-lg">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              <picture>
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </picture>
             </div>
             <CardHeader>
               <div className="flex items-center justify-between mb-2">

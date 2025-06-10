@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Zap, Share2, Smartphone, BarChart3, Lock } from "lucide-react";
+import { Zap, Share2, Smartphone, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [

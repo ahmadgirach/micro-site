@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -92,8 +92,8 @@ export function Testimonials() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-lg text-muted-foreground max-w-2xl mx-auto"
         >
-          Testimonials from clients and colleagues I've had the pleasure to work
-          with
+          Testimonials from clients and colleagues I&apos;ve had the pleasure to
+          work with
         </motion.p>
       </div>
 
@@ -116,7 +116,7 @@ export function Testimonials() {
                 <CardContent className="text-center space-y-6">
                   <Quote className="size-12 mx-auto text-primary" />
                   <blockquote className="text-lg md:text-xl leading-relaxed">
-                    "{testimonials[currentIndex].content}"
+                    &quot;{testimonials[currentIndex].content}&quot;
                   </blockquote>
                   <div className="flex items-center justify-center space-x-4">
                     <Avatar className="size-16">

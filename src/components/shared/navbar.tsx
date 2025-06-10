@@ -21,7 +21,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const params = useParams();
-  const username = params?.username!;
+  const username = params?.username ?? "";
 
   const navigation = [
     { name: "Home", href: `/${username}`, icon: Home },

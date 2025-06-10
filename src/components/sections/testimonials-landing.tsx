@@ -84,7 +84,8 @@ export function TestimonialsLanding() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Join thousands of creators who've made the switch to our platform
+            Join thousands of creators who&apos;ve made the switch to our
+            platform
           </motion.p>
         </div>
       </div>
@@ -120,7 +121,7 @@ export function TestimonialsLanding() {
                   ))}
                 </div>
                 <blockquote className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </blockquote>
                 <div className="flex items-center gap-3">
                   <Avatar className="w-12 h-12">

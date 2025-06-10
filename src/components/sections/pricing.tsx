@@ -71,8 +71,8 @@ export function Pricing() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Start free and upgrade when you're ready. No monthly fees, no hidden
-            costs.
+            Start free and upgrade when you&apos;re ready. No monthly fees, no
+            hidden costs.
           </motion.p>
         </div>
 

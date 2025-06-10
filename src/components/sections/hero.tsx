@@ -97,8 +97,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-lg text-muted-foreground leading-relaxed bg-secondary rounded-md p-8 text-balance"
         >
-          I'm passionate about creating exceptional digital experiences through
-          clean code, innovative solutions, and user-centered design.
+          I&apos;m passionate about creating exceptional digital experiences
+          through clean code, innovative solutions, and user-centered design.
           Specializing in Python, Django, TypeScript, React, Next.js, and modern
           web technologies to build scalable applications that make a
           difference.

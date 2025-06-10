@@ -62,8 +62,8 @@ export function WhyChooseUs() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            We're not just another link-in-bio tool. Here's what makes us
-            different from the competition.
+            We&apos;re not just another link-in-bio tool. Here&apos;s what makes
+            us different from the competition.
           </motion.p>
         </div>
 

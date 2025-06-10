@@ -170,8 +170,7 @@
 
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Play } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function HeroLanding() {

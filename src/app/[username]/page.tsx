@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/shared/navbar";
 import { Hero } from "@/components/sections/hero";
 import { Projects } from "@/components/sections/projects";
 import { Testimonials } from "@/components/sections/testimonials";
