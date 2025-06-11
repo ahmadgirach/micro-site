@@ -170,14 +170,17 @@
 
 "use client";
 
-import { Sparkles } from "lucide-react";
+import Link from "next/link";
+
+import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import { Button } from "../ui/button";
 
 export function HeroLanding() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      {/* <div className="absolute inset-0 bg-grid-pattern opacity-5"></div> */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-3xl opacity-10"></div>
 
       <div className="container mx-auto px-4 py-20 lg:py-18">
@@ -197,15 +200,13 @@ export function HeroLanding() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tighter mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance"
           >
-            Create Your Perfect
+            Build Your Personal Brand on One
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               {" "}
-              Microsite
+              Beautiful Page
             </span>
-            <br />
-            in Minutes
           </motion.h1>
 
           <motion.p
@@ -214,12 +215,11 @@ export function HeroLanding() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8"
           >
-            Build stunning bio pages with your social links, projects, and
-            content. No coding experience needed. Share one link that contains
-            everything about you.
+            Build stunning portfolio page with your bio, socials, projects and
+            blog — all in one place. No coding experience needed. Open Source.
           </motion.p>
 
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -227,20 +227,25 @@ export function HeroLanding() {
           >
             <Button
               size="lg"
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg"
+              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-6 text-lg rounded-lg"
+              asChild
             >
-              Launching Soon
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Link href="/ahmadgirach">
+                View Demo Profile
+                {/* <span>
+                </span> */}
+                <ArrowRight className="size-5 ml-1 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
-            <Button
+            {/**<Button
               size="lg"
               variant="outline"
               className="px-8 py-6 text-lg group"
             >
               <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Watch Demo
-            </Button>
-          </motion.div> */}
+            </Button>*/}
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -249,16 +254,12 @@ export function HeroLanding() {
             className="flex items-center justify-center gap-8 text-sm text-muted-foreground"
           >
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              Free Forever
+              <div className="size-3 bg-blue-500 rounded-full"></div>
+              No Credit Card required
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-              No Credit Card
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-              Setup in 2 Minutes
+              <div className="size-3 bg-purple-500 rounded-full"></div>
+              Setup in 5 Minutes
             </div>
           </motion.div>
         </div>
@@ -275,13 +276,13 @@ export function HeroLanding() {
             {/* Browser header */}
             <div className="flex items-center gap-2 px-6 py-4 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
               <div className="flex gap-2">
-                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div className="size-3 bg-red-500 rounded-full"></div>
+                <div className="size-3 bg-yellow-500 rounded-full"></div>
+                <div className="size-3 bg-green-500 rounded-full"></div>
               </div>
               <div className="flex-1 mx-4">
                 <div className="bg-white dark:bg-gray-700 rounded-lg px-4 py-2 text-sm text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600">
-                  alexchen.microsite.com
+                  microsite.live/alexchen
                 </div>
               </div>
             </div>

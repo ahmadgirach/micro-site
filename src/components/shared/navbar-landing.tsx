@@ -5,6 +5,8 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun, X, Menu } from "lucide-react";
 import { useState } from "react";
+import { Bricolage_Grotesque } from "next/font/google";
+import { bricolageGrotesque } from "@/app/ui/fonts";
 
 export function NavbarLanding() {
   const { theme, setTheme } = useTheme();
@@ -27,7 +29,11 @@ export function NavbarLanding() {
             className="inline-flex items-center justify-center gap-2 text-xl font-bold"
           >
             <img src="/assets/logo.svg" alt="Brand Logo" loading="lazy" />{" "}
-            <span className="text-2xl">Microsite</span>
+            <span
+              className={`${bricolageGrotesque.className} text-3xl tracking-tighter`}
+            >
+              Microsite
+            </span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

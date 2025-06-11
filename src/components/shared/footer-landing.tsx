@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Github, Twitter, Linkedin, Mail, Heart } from "lucide-react";
+import { bricolageGrotesque } from "@/app/ui/fonts";
 
 export function FooterLanding() {
   const currentYear = new Date().getFullYear();
@@ -39,13 +40,14 @@ export function FooterLanding() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2 space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h3
+              className={`${bricolageGrotesque.className} text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent tracking-tighter`}
+            >
               Microsite
             </h3>
             <p className="text-gray-400 leading-relaxed max-w-md text-balance">
-              Create a beautiful microsite that showcase your digital identity.
-              Open source, privacy-focused, and designed for designers,
-              developers and creators.
+              Build stunning portfolio page with your bio, socials, projects and
+              blog — all in one place. No coding experience needed. Open Source.
             </p>
             <div className="flex items-center gap-3">
               {socialLinks.map((item) => {

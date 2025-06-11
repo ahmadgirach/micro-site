@@ -14,7 +14,7 @@ const testimonials = [
     avatar:
       "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
     content:
-      "Alex delivered exceptional work on our e-commerce platform. His attention to detail and technical expertise made the project a huge success.",
+      "Ahmad delivered exceptional work on our e-commerce platform. His attention to detail and technical expertise made the project a huge success.",
   },
   {
     name: "Michael Rodriguez",
@@ -22,7 +22,7 @@ const testimonials = [
     avatar:
       "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400",
     content:
-      "Working with Alex was a game-changer for our team. He brought innovative solutions and delivered high-quality code on time.",
+      "Working with Ahmad was a game-changer for our team. He brought innovative solutions and delivered high-quality code on time.",
   },
   {
     name: "Emily Johnson",
@@ -30,7 +30,7 @@ const testimonials = [
     avatar:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400",
     content:
-      "Alex has an incredible ability to translate design concepts into pixel-perfect implementations. Highly recommended!",
+      "Ahmad has an incredible ability to translate design concepts into pixel-perfect implementations. Highly recommended!",
   },
   {
     name: "David Kim",
@@ -38,7 +38,7 @@ const testimonials = [
     avatar:
       "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
     content:
-      "The quality of work and professionalism Alex brings to every project is outstanding. A true full-stack expert.",
+      "The quality of work and professionalism Ahmad brings to every project is outstanding. A true full-stack expert.",
   },
 ];
 
