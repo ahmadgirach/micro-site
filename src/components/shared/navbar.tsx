@@ -15,6 +15,7 @@ import {
   Bookmark,
 } from "lucide-react";
 import { useParams } from "next/navigation";
+import { bricolageGrotesque } from "@/app/ui/fonts";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -39,7 +40,9 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-secondary/60 px-2 md:rounded-full">
+    <nav
+      className={`${bricolageGrotesque.className} sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-secondary/60 px-2 md:rounded-full`}
+    >
       <div className="px-4">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="text-xl font-bold">

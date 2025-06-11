@@ -20,7 +20,9 @@ export function NavbarLanding() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-secondary px-4">
+    <nav
+      className={`${bricolageGrotesque.className} sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-secondary px-4`}
+    >
       <div className="px-4">
         <div className="flex h-20 items-center justify-between">
           <Link
@@ -28,11 +30,7 @@ export function NavbarLanding() {
             className="inline-flex items-center justify-center gap-2 text-xl font-bold"
           >
             <img src="/assets/logo.svg" alt="Brand Logo" loading="lazy" />{" "}
-            <span
-              className={`${bricolageGrotesque.className} text-3xl tracking-tighter`}
-            >
-              Microsite
-            </span>
+            <span className="text-3xl tracking-tighter">Microsite</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
