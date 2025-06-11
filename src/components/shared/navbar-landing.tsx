@@ -5,7 +5,6 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun, X, Menu } from "lucide-react";
 import { useState } from "react";
-import { Bricolage_Grotesque } from "next/font/google";
 import { bricolageGrotesque } from "@/app/ui/fonts";
 
 export function NavbarLanding() {
