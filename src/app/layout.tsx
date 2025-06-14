@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/shared/theme-provider";
+import { AuthProvider } from "@/contexts/auth-context";
 import { Analytics } from "@vercel/analytics/next";
 import { geistMono, geistSans } from "./ui/fonts";
 
@@ -63,9 +64,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange={false}
         >
-          <div className="min-h-dvh flex flex-col">
-            <main className="flex-1">{children}</main>
-          </div>
+          <AuthProvider>
+            <div className="min-h-dvh flex flex-col">
+              <main className="flex-1">{children}</main>
+            </div>
+          </AuthProvider>
         </ThemeProvider>
         <Analytics />
       </body>
