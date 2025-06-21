@@ -14,33 +14,65 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import {
-  User,
-  Camera,
-  Plus,
-  X,
-  MapPin,
-  Globe,
-  Mail,
-  Phone,
-  Linkedin,
-  Twitter,
-  Github,
-  Instagram,
-} from "lucide-react";
+import { User, Camera, Plus, X, MapPin, Globe, LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import {
+  BehanceIcon,
+  DribbleIcon,
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  StackOverflowIcon,
+  XIcon,
+  YouTubeIcon,
+} from "@/components/icons";
+
+type SocialLink = {
+  platform: string;
+  url: string;
+  icon: LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
+};
 
 export default function ProfilePage() {
   const { user } = useAuth();
-  const [socialLinks, setSocialLinks] = useState([
+  const [socialLinks, setSocialLinks] = useState<SocialLink[]>([
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/johndoe",
-      icon: Linkedin,
+      url: "https://linkedin.com/",
+      icon: LinkedInIcon,
     },
-    { platform: "Twitter", url: "https://twitter.com/johndoe", icon: Twitter },
-    { platform: "GitHub", url: "https://github.com/johndoe", icon: Github },
+    { platform: "X", url: "https://x.com/", icon: XIcon },
+    {
+      platform: "Instagram",
+      url: "https://instagram.com/",
+      icon: InstagramIcon,
+    },
+    {
+      platform: "YouTube",
+      url: "https://youtube.com/",
+      icon: YouTubeIcon,
+    },
+    {
+      platform: "GitHub",
+      url: "https://github.com/",
+      icon: GitHubIcon,
+    },
+    {
+      platform: "StackOverflow",
+      url: "https://stackoverflow.com/",
+      icon: StackOverflowIcon,
+    },
+    {
+      platform: "Dribbble",
+      url: "https://dribbble.com/",
+      icon: DribbleIcon,
+    },
+    {
+      platform: "Behance",
+      url: "https://behance.net/",
+      icon: BehanceIcon,
+    },
   ]);
 
   const [skills, setSkills] = useState([
@@ -118,22 +150,6 @@ export default function ProfilePage() {
                   Change Photo
                 </Button>
               </div>
-
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium">Profile Status</span>
-                  <Badge
-                    variant="secondary"
-                    className="bg-green-100 text-green-800"
-                  >
-                    Active
-                  </Badge>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <MapPin className="w-4 h-4" />
-                  San Francisco, CA
-                </div>
-              </div>
             </CardContent>
           </Card>
         </motion.div>
@@ -176,16 +192,8 @@ export default function ProfilePage() {
                   <Input id="title" placeholder="Senior Product Designer" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="company">Company</Label>
-                  <Input id="company" placeholder="Tech Startup Inc." />
-                </div>
-                <div className="space-y-2">
                   <Label htmlFor="location">Location</Label>
                   <Input id="location" placeholder="San Francisco, CA" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="website">Website</Label>
-                  <Input id="website" placeholder="https://johndoe.com" />
                 </div>
               </div>
 
@@ -221,18 +229,13 @@ export default function ProfilePage() {
               return (
                 <div
                   key={index}
-                  className="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg"
+                  className="flex items-center gap-2 p-2 bg-gray-50 dark:bg-gray-800/50 rounded-lg"
                 >
-                  <div className="w-10 h-10 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center">
-                    <Icon className="w-5 h-5" />
+                  <div className="size-8 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center">
+                    <Icon className="size-5" />
                   </div>
-                  <div className="flex-1 space-y-2">
-                    <Input
-                      placeholder="Platform name"
-                      defaultValue={link.platform}
-                      className="font-medium"
-                    />
-                    <Input placeholder="https://..." defaultValue={link.url} />
+                  <div className="flex-1 space-y-1">
+                    <Input type="url" defaultValue={link.url} />
                   </div>
                   <Button
                     variant="ghost"
@@ -258,7 +261,7 @@ export default function ProfilePage() {
       </motion.div>
 
       {/* Skills & Interests */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
@@ -301,7 +304,7 @@ export default function ProfilePage() {
             </div>
           </CardContent>
         </Card>
-      </motion.div>
+      </motion.div> */}
 
       {/* Save Button */}
       <motion.div
