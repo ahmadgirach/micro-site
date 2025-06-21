@@ -127,14 +127,7 @@ export function NavbarLanding() {
               </DropdownMenu>
             ) : (
               <>
-                <Button variant="outline" size="sm" asChild>
-                  <Link href="/login">Sign In</Link>
-                </Button>
-                <Button
-                  size="sm"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-                  asChild
-                >
+                <Button asChild>
                   <Link href="/login">Get Started</Link>
                 </Button>
               </>

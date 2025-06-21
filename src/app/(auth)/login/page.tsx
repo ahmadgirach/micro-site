@@ -13,8 +13,8 @@ import {
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { bricolageGrotesque } from "@/app/ui/fonts";
 import Link from "next/link";
+import { Brand } from "@/components/shared/brand";
 
 // Icon by https://devicon.dev/
 const GoogleLogo = () => (
@@ -50,7 +50,7 @@ export default function LoginPage() {
   // Redirect if already logged in
   useEffect(() => {
     if (user) {
-      router.push("/home");
+      router.push("/dashboard");
     }
   }, [user, router]);
 
@@ -96,28 +96,20 @@ export default function LoginPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex items-center justify-center"
             >
-              <img src="/assets/logo.svg" alt="Brand Logo" loading="lazy" />
+              <Brand />
             </motion.div>
 
-            <div className="space-y-2">
-              <CardTitle
-                className={`${bricolageGrotesque.className} text-2xl font-bold tracking-tighter`}
-              >
-                Microsite
-              </CardTitle>
-              <CardDescription className="text-base">
-                Build stunning portfolio page with your bio, socials, projects
-                and blog — all in one place. No coding experience needed. Open
-                Source.
-              </CardDescription>
-            </div>
+            <CardDescription className="text-base">
+              Build stunning portfolio page with your bio, socials, projects and
+              blog — all in one place. No coding experience needed. Open Source.
+            </CardDescription>
           </CardHeader>
 
           <CardContent className="space-y-6">
             <Button
               onClick={handleGoogleLogin}
               disabled={isLoading}
-              className="w-full h-12 text-base font-medium bg-white hover:bg-gray-50 text-gray-900 border border-gray-300 shadow-sm"
+              className="w-full h-10 text-base font-medium bg-white hover:bg-gray-50 text-gray-900 border border-gray-300 shadow-sm"
               variant="outline"
             >
               {isLoading ? (

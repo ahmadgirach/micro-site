@@ -14,7 +14,16 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { User, Camera, Plus, X, MapPin, Globe, LucideIcon } from "lucide-react";
+import {
+  User,
+  Camera,
+  Plus,
+  X,
+  MapPin,
+  Globe,
+  LucideIcon,
+  UserPen,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import {
@@ -163,7 +172,10 @@ export default function ProfilePage() {
         >
           <Card className="border-0 shadow-lg">
             <CardHeader>
-              <CardTitle>Basic Information</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <UserPen className="size-5" />
+                Basic Information
+              </CardTitle>
               <CardDescription>
                 Your personal details and professional information
               </CardDescription>
